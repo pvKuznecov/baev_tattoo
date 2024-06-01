@@ -161,9 +161,9 @@ footer {
 .about_me {
     display: flex;
     /* flex-flow: column; */
-    width: 60vw;
-    min-height: 40vh;
-    max-height: 50vh;
+    width: 900px;
+    min-height: 300px;
+    max-height: 300px;
     margin-top: 15vh;
     /* right: 30px; */
     margin-left: auto;
@@ -176,24 +176,24 @@ footer {
 .about_me_txt {
     display: block;
     background-color: white;
-    min-width: 50%;
+    min-width: 700px;
     /* max-width: 90%; */
-    min-height: calc(40vh - 30px);
+    min-height: 295px;
     /* box-shadow: 7px 5px 0 5px red, -.8em 5px .1em blue; */
     padding: 15px 20vh 15px 15px;
     border-radius: 5px ;
     /* font-family: "Boozy"; */
     /* font-family: "League"; */
     font-family: sans-serif;
-    font-size: 19px;
-    margin-right: 10px;
+    font-size: 16px;
+    margin-right: -45px;
     box-shadow: inset 3px 3px gray;
 }
 
 .about_me_sign {
     color: crimson;
     /* padding-top: 5px; */
-    font-size: 26px;
+    font-size: 18px;
     margin-right: 40px;
     /* font-family: "Boozy"; */
     /* font-family: "League"; */
@@ -202,14 +202,14 @@ footer {
 .photo_area {
     /* max-width: 20%; */
     display: block;
-    margin-left: -21vh;
+    margin-left: -21%;
 }
 
 .photo_area img {
-    min-width: 40vh;
-    min-height: 40vh;
-    max-width: 40vh;
-    max-height: 40vh;
+    min-width: 292px;
+    min-height: 292px;
+    max-width: 292px;
+    max-height: 292px;
     /* width: 350px;
     height: 350px; */
     border-radius: 200px;
@@ -244,9 +244,9 @@ footer {
 .price_list {
     display: flex;
     /* flex-flow: column; */
-    width: 60vw;
-    min-height: 43vh;
-    max-height: 43vh;
+    width: 900px;
+    min-height: 300px;
+    max-height: 300px;
     margin-top: 15vh;
     /* right: 30px; */
     margin-left: auto;
@@ -258,10 +258,10 @@ footer {
 
 .price_list_txt {
     display: block;
-    min-width: 50%;
-    max-width: calc(100% -40vh);
-    min-height: 41vh;
-    max-height: 41vh;
+    min-width: 725px;
+    max-width: 725px;
+    min-height: 295px;
+    max-height: 295px;
     background-color: white;
     border-radius: 5px;
     padding: 22px 22px 20px 22vh;
