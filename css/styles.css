@@ -217,9 +217,11 @@ footer {
 
 .my_works {
     display: flex;
-    flex-flow: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-flow: row nowrap;
     /* width: 100vw; */
-    min-height: 50vh;
+    min-height: 46vh;
     margin-top: 15vh;
     /* width: 80vw; */
     margin-left: auto;
@@ -231,12 +233,20 @@ footer {
     font-size: 24px;
 }
 
+.work_item {
+    background-color: white;
+    width: 13%;
+    min-height: 45vh;
+    max-height: 45vh;
+    margin-right: 5px;
+}
+
 .price_list {
     display: flex;
     /* flex-flow: column; */
     width: 60vw;
-    /* min-height: 40vh; */
-    max-height: 100vh;
+    min-height: 43vh;
+    max-height: 43vh;
     margin-top: 15vh;
     /* right: 30px; */
     margin-left: auto;
@@ -250,6 +260,8 @@ footer {
     display: block;
     min-width: 50%;
     max-width: calc(100% -40vh);
+    min-height: 41vh;
+    max-height: 41vh;
     background-color: white;
     border-radius: 5px;
     padding: 22px 22px 20px 22vh;
@@ -342,9 +354,10 @@ footer {
 .qr_div {
     width: 120px;
     height: 120px;
-    background: url("../assets/qr/qr_instagram.jpg");
+    background: url("../assets/qr/qr_0.jpg");
     background-repeat: no-repeat;
     background-size: contain;
+    transition: background 1s ease-in-out;
 }
 
 .contacts_data_txt {
