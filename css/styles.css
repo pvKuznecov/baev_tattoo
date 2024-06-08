@@ -1,5 +1,5 @@
 body {
-    position: relative;
+    /* position: relative; */
     min-height: 100vh;
     color: #55566a;
     font-family: TT Norms;
@@ -11,7 +11,10 @@ body, html {
     padding: 0;
     margin: 0;
     font-size: 16px;
-    min-height: 100%; }
+    min-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+ }
 
 h2, h3 {
     padding-left: 10px;
@@ -20,6 +23,7 @@ h2, h3 {
 header {
     min-height: 20vh;
     max-height: 20vh;
+    min-width: 100vw;
     max-width: 100vw;
     background-color: #F1EFE7;
     /* background-color: rgb(25, 25, 25); */
@@ -27,7 +31,7 @@ header {
 
 header .header-title {
     /* width: 100vw; */
-    max-width: 100vw;
+    max-width: 100%;
     /* color: white; */
     color: rgb(25, 25, 25);
     font-size: 5em;
@@ -136,7 +140,7 @@ footer {
     background-color: #F1EFE7;
     height: 40px;
     /* width: 100vw; */
-    max-width: 100vw;
+    max-width: 100%;
     padding: 3px;
     padding-left: 25px; }
 
@@ -187,8 +191,8 @@ footer {
     display: flex;
     /* flex-flow: column; */
     width: 900px;
-    min-height: 300px;
-    max-height: 300px;
+    /* min-height: 300px;
+    max-height: 300px; */
     margin-top: 15vh;
     /* right: 30px; */
     margin-left: auto;
@@ -205,7 +209,7 @@ footer {
     background-color: #F1EFE7;
     min-width: 700px;
     /* max-width: 90%; */
-    min-height: 295px;
+    /* min-height: 295px; */
     /* box-shadow: 7px 5px 0 5px red, -.8em 5px .1em blue; */
     padding: 15px 20vh 15px 15px;
     border-radius: 5px ;
@@ -218,51 +222,151 @@ footer {
     box-shadow: 0px 2px 6px -1px #d1d1d1;
 }
 
-@media(max-width: 450px) {
+@media(min-width: 900px) and (max-width: 1200px) {
     .about_me {
-        width: 300px;
-    }
+        min-width: 890px;
+        max-width: 890px; }
 
     header {
-        padding-top: 30px;
-        /* padding-bottom: 0; */
-        
+        padding: 5px 10px;
+    }
+
+    header .header-title {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 2.5em; }
+    
+    .main-menu {
+        min-height: 40px;
+        max-height: 40px; }
+}
+
+@media(min-width: 451px) and (max-width: 900px) {
+    .about_me {
+        min-width: 440px;
+        max-width: 440px;
     }
 
     header .header-title {
         font-size: 2.5em; }
     
     .main-menu {
-        min-height: 100px;
-        max-height: 100px; }
+        min-height: 50px;
+        max-height: 50px; }
+
+    .about_me,
+    .price_list {
+        min-width: 440px;
+        max-width: 440px;
+        border-radius: 10px;
+    }
+
+    .about_me_txt,
+    .price_list_txt {
+        min-width: 440px;
+        max-width: 440px;
+        margin-right: 0;
+        margin-left: 0;
+        padding: 15px !important;
+    }
+}
+
+@media(max-width: 450px) {
+    header {
+        padding-top: 30px !important;
+        /* padding-bottom: 0; */
+        
+    }
+
+    header .header-title {
+        font-size: 2.5em !important; }
+    
+    .main-menu {
+        min-height: 100px !important;
+        max-height: 100px !important; }
 
     .main-menu a {
         width: 50%; }
 
     .about_me,
     .price_list {
-        min-width: 300px;
-        max-width: 300px;
-        border-radius: 10px;
+        min-width: 300px !important;
+        max-width: 300px !important;
+        padding: 5px !important;
+        border-radius: 10px !important;
     }
 
     .about_me_txt,
     .price_list_txt {
-        min-width: 290px;
-        max-width: 290px;
-        margin-right: 0;
-        margin-left: 0;
+        min-width: 290px !important;
+        max-width: 290px !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
         padding: 15px !important;
     }
 
     .about_me .photo_area,
     .price_list .photo_area {
-        visibility: hidden;
-        margin-left: 0;
-        margin-right: 0;
+        visibility: hidden !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
 
+    .fix_socials_txt {
+        visibility: hidden !important;
+    }
     
+    .photo_area {
+        width: 10px;
+        margin-left: 0 !important;
+        margin-right: 0 !important; }
+
+    .photo_area img {
+        border-radius: 10px !important;
+        max-height: 100vh !important;
+    }
+
+    .contacts {
+        padding: 5px !important;
+        flex-direction: column !important;
+    }
+
+    .contacts_data_txt {
+        margin-top: 30px !important;
+        margin-left: 0 !important;
+    }
+
+    .qr_div {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        min-width: 80vw !important;
+        max-width: 80vw !important;
+        min-height: 80vw !important;
+        max-height: 80vw !important; }
+
+    .to_main_menu_button {
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    /* .fix_socials {
+        visibility: hidden !important;
+        right: 100% !important;
+    } */
+
+    .my_works {
+        justify-content: space-between !important;
+        flex-wrap: wrap !important;}
+
+    .work_item {
+        /* width: 24vw !important;
+        height: 40vw !important; */
+        width: 220px !important;
+        height: 392px !important;
+        /* margin: 5px !important; */
+        /* margin: 1px !important; */
+        border-radius: 10px !important;
+    }
 }
 
 .about_me_sign {
@@ -316,10 +420,12 @@ footer {
 .work_item {
     /* background-color: white; */
     background-color: #F1EFE7;
-    width: 13%;
-    min-height: 45vh;
-    max-height: 45vh;
-    margin-right: 5px;
+    width: 12.3vw;
+    min-height: 40vh;
+    /* max-height: 45vh; */
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-right: 5px; */
 }
 
 .price_list {
@@ -327,7 +433,7 @@ footer {
     /* flex-flow: column; */
     width: 900px;
     min-height: 300px;
-    max-height: 300px;
+    max-height: 100%;
     margin-top: 15vh;
     /* right: 30px; */
     margin-left: auto;
@@ -342,8 +448,6 @@ footer {
     display: block;
     min-width: 725px;
     max-width: 725px;
-    min-height: 295px;
-    max-height: 295px;
     /* background-color: white; */
     background-color: #F1EFE7;
     border-radius: 5px;
@@ -417,7 +521,7 @@ footer {
 }
 
 .fix_socials_txt {
-    position:absolute;
+    position: absolute;
     display: flex;
     flex-flow: column;
     right: 50px;
@@ -441,8 +545,10 @@ footer {
 }
 
 .qr_div {
-    width: 120px;
-    height: 120px;
+    min-width: 120px;
+    max-width: 120px;
+    min-height: 120px;
+    max-height: 120px;
     background: url("../assets/qr/qr_0.jpg");
     background-repeat: no-repeat;
     background-size: contain;
