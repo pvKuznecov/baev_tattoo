@@ -1,12 +1,12 @@
 $(document).ready(function(){
     "use strict";
 
-    for (let i = 1; i <= 8; i++) {
-        let urlResult = "url('./assets/img/jobe/mjobe_" + i + ".jpg')";
-        $("#myWork_" + i).css("background", urlResult);
-        $("#myWork_" + i).css("background-repeat", "no-repeat");
-        $("#myWork_" + i).css("background-size", "contain");
-    };
+    // for (let i = 1; i <= 8; i++) {
+    //     let urlResult = "url('./assets/img/jobe/mjobe_" + i + ".jpg')";
+    //     $("#myWork_" + i).css("background", urlResult);
+    //     $("#myWork_" + i).css("background-repeat", "no-repeat");
+    //     $("#myWork_" + i).css("background-size", "contain");
+    // };
     // myWork_1
 
     const qrList = 3;   // для qr кодов - указатель кол-ва "сколько показывать"
