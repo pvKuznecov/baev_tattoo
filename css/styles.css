@@ -14,7 +14,7 @@ main, footer {
 
 header h1 {
     font-family: "League";
-    font-size: 5rem;
+    font-size: 2.5rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
     text-shadow: rgba(25, 25, 25, .2) 2px 7px;
@@ -22,11 +22,14 @@ header h1 {
 
 .mainMenu li {
     display: inline;
+    font-family: "League";
+    font-size: 1rem;
+    text-shadow: rgba(25, 25, 25, .2) 2px 2px;
 }
 
 .mainMenu a {
     color: rgb(25, 25, 25);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     font-variant-caps: all-petite-caps;
 }
@@ -40,19 +43,24 @@ header h1 {
     border: 6px solid rgb(25, 25, 25);
 }
 
+.worksDemo_mobile,
 .worksDemo {
     background-color: white;
-    min-width: 98vw;
-    max-width: 98vw;
+    min-width: 95vw;
+    max-width: 95vw;
     min-height: 10px;
     border-radius: 1.5rem;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
-    padding: 20px;
+    margin-top: 2rem;
+    padding: 1rem;
     background: url(../assets/img/sea-fon.jpg);
     background-repeat: repeat;
     animation: sea-fon 40s linear infinite;
+}
+
+.worksDemo_mobile {
+    display: none;
 }
 
 @keyframes sea-fon {
@@ -99,7 +107,7 @@ header h1 {
     background-repeat: no-repeat;
     background-size: contain;
     transition: background 1s ease-in-out;
-    border-radius: 5px;
+    border-radius: .8rem;
     /* border: 2px solid rgb(25, 25, 25); */
     box-shadow: 0px -1px 6px -1px #d1d1d1;
 }
@@ -107,8 +115,8 @@ header h1 {
 .socLinks {
     max-width: 50px;
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 2rem;
+    right: 2rem;
     border-radius: 5px;
 }
 
@@ -131,7 +139,46 @@ header h1 {
     font-weight: normal;
 }
 
+@media (max-width: 600px) {
+    #mainAvatar,
+    #infoPrice_img,
+    #qr_div {
+        display: none;
+    }
 
+    #aboutTxt,
+    #infoPrice_txt {
+        max-width: 90%;
+        border-radius: 1.2rem;
+        padding: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(25, 25, 25, .3);
+        box-shadow: 0px -1px 6px -1px rgb(25, 25, 25);
+    }
+
+    .about_me_sign {
+        color: white;
+        text-shadow: rgba(25, 25, 25, .2) 2px 2px;
+    }
+
+    .worksDemo_mobile {
+        display: block;
+    }
+
+    .worksDemo {
+        display: none;
+    }
+
+    .worksDemoItem {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .worksDemoItem img {
+        box-shadow: none;
+    }
+}
 
 
 
